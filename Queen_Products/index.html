@@ -7,14 +7,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!-- CSS file link-->
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    function sendMail() {
+        window.location.href = 'mrunalibabar03@gmail.com';
+    }
+  </script>
 </head>
+
 <body>
+  
+
     <!--Header section starts-->
   <header>
   
     <input type="checkbox" name="" id="toggler">
     <label for="toggler" class="fas fa-bars"></label>
-    <a href="#" class="logo">Queen Products <span>.</span></a>
+    <!-- <a class="btn btn-primary" onclick="sendMail()" role="button">Send Email  <i class="fa fa-envelope"></i> </a> -->
+    <button class="btn btn-primary" onclick="sendMail()" role="button">Send Email <i class="fa fa-envelope"></i> </button>
+
+    <a href="#" class="logo">Queens Products<span>.</span></a>
   
   
   <nav class="navbar">
@@ -23,29 +34,13 @@
     <a href="#products">Products</a>
     <a href="#review">Review</a>
     <a href="#contact">Contact</a>
-    <div class="navsearch border">
-      <select class="search-select">
-            <option>All</option>
-            <option>Spice Powder</option>
-            <option>Indian Spices</option>
-            <option>Cooking Spices</option>
-            <option>Turmeric Powder</option>
-            <option>Other Products</option>
-
-      </select>
-      <input placeholder="Search For QueenProduct" class="search-input">
-      <div class="search-icon">
-         <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-</div>
      
   </nav>
 
   <div class="icons">
 
-    <a href="#" class="fas fa-heart"></a>
-    <a href="#" class="fas fa-shopping-cart"></a>
-    <a href="#" class="fas fa-user"></a>
+    <a href="#" class="fas fa-question-circle"></a>
+    <a href="login.html" class="fas fa-user"></a>
   </div>
 </header>
     <!--Header section ends-->
@@ -54,12 +49,13 @@
     <!--Home Section Starts -->
 
     <section class="home" id="home">
-       <div class="content">
-         <h3>Natural Spices</h3>
-         <span>To Enhance Your Recipe</span>
+   
+     <div class="content">
+         <h3>Queens Products</h3>
+         <span><i class="fa fa-map-marker"></i> Gandi Nagar , Nagpur ,Maharashatra | <i class="fa fa-check-circle"></i> verfied Supplier</span>
          <p>Spice Your Food And Life With the Magic Of Our Handpicked Goodness</p>
-           <a href="#" class="btn">Shop now</a>
-       </div>
+           <a href="contactSeller.html" class="btn">Call Now  <i class="fa fa-phone"></i></a>
+       </div> 
 
 
     </section>
@@ -75,10 +71,10 @@
         <h3> Best Natural Spices</h3>
       </div>
       <div class="content">
-        <h3>Why Choose Us?</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-       <a href="#" class="btn">Learn More</a>
+        <h3>Our Journey with Spices</h3>
+        <p>Welcome to queens products, the heart and soul of natural spices. Our journey is more than just selling spices; it's about sharing the essence of flavors from around the world and bringing them to your kitchen.</p>
+        <p>Our relationship with our suppliers is built on trust and a shared commitment to sustainable and ethical practices. We travel extensively to find farmers and producers who share our values, ensuring that every spice in our collection is not only of the highest quality but also supports local communities</p>
+  
       
       </div>
 
@@ -90,28 +86,28 @@
     <!--icons section starts-->
     <section class="icons-container">
       <div class="icons">
-        <img src="images/free-delivery.png" alt="">
-        <h3>free delivery</h3>
-        <span>on all orders</span>
+        <img src="images/organic.png" alt="">
+        <h3>100% Natural and Pure</h3>
+         <span>Free from additives and artificial falvors</span> 
       </div>
 
       <div class="icons">
-        <img src="images/money-bag.png" alt="">
-        <h3>10 days returns</h3>
-        <span>moneyback guarantee</span>
+        <img src="images/compassion.png" alt="">
+        <h3>Ethically Sourced</h3>
+        <span>Directly from farms</span>
       </div>
 
       <div class="icons">
-        <img  src="images/gift.png" alt="">
-        <h3>offer & gifts</h3>
-        <span>on all orders</span>
+        <img  src="images/box.png" alt="">
+        <h3>Quality Assured</h3>
+        <span>Rigorously tested for quality</span>
       </div>
 
 
       <div class="icons">
-        <img src="images/credit-card (1).png" alt="">
-        <h3>secure payments</h3>
-        <span>protected by paypal</span>
+        <img src="images/fresh.png" alt="">
+        <h3>Freshly Packed</h3>
+        <span>Maximizing flavor retention</span>
       </div>
 
     </section>
@@ -122,21 +118,20 @@
 
     <section class="products" id="products">
 
-      <h1 class="heading">latest <span>products</span></h1>
+      <h1 class="heading">Available <span>products</span></h1>
       <div class="box-container">
         <div class="box">
           <span class="discount">-10%</span>
           <div class="image">
             <img src="images/mirchipowder2.png" alt="">
-            <div class="icons">
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#" class="cart-btn">Add to Cart</a>
-              <a href="#" class="fas fa-share"></a>
-            </div>
+           
           </div>
           <div class="content">
             <h3>Mirchi Powder</h3>
             <div class="price">Rs.350 / kilogram</div>
+          </div>
+          <div class="icons">
+            <a href="contactSeller.html" class="cart-btn">Contact Seller <i class="fa fa-address-book"></i></a>
           </div>
         </div>
 
@@ -144,15 +139,14 @@
           <span class="discount">-15%</span>
           <div class="image">
             <img  src="images/garam_masala.jpg" alt="">
-            <div class="icons">
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#" class="cart-btn">Add to Cart</a>
-              <a href="#" class="fas fa-share"></a>
-            </div>
+            
           </div>
           <div class="content">
             <h3>Garam Masala</h3>
             <div class="price">Rs.20/ Packet</div>
+          </div>
+          <div class="icons">
+            <a href="contactSeller.html" class="cart-btn">Contact Seller <i class="fa fa-address-book"></i></a>
           </div>
         </div>
 
@@ -161,15 +155,15 @@
           <span class="discount">-5%</span>
           <div class="image">
             <img  src="images/organic-turmeric-powder.jpeg" alt="">
-            <div class="icons">
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#" class="cart-btn">Add to Cart</a>
-              <a href="#" class="fas fa-share"></a>
-            </div>
           </div>
           <div class="content">
             <h3>Turmeric Powder</h3>
             <div class="price">Rs.200/ kilogram</div>
+          </div>
+          <div class="icons">
+            
+            <a href="contactSeller.html" class="cart-btn">Contact Seller <i class="fa fa-address-book"></i></a>
+            
           </div>
         </div>
 
@@ -178,15 +172,13 @@
           <span class="discount">-20%</span>
           <div class="image">
             <img src="images/coriandert-powder2.jpg" alt="">
-            <div class="icons">
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#" class="cart-btn">Add to Cart</a>
-              <a href="#" class="fas fa-share"></a>
-            </div>
           </div>
           <div class="content">
             <h3>Coriander Powder</h3>
             <div class="price">Rs.50/ kilogram</div>
+          </div>
+          <div class="icons">
+            <a href="contactSeller.html" class="cart-btn">Contact Seller <i class="fa fa-address-book"></i></a>
           </div>
         </div>
 
@@ -195,15 +187,14 @@
           <span class="discount">-17%</span>
           <div class="image">
             <img  src="images/black.jpg" alt="">
-            <div class="icons">
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#" class="cart-btn">Add to Cart</a>
-              <a href="#" class="fas fa-share"></a>
-            </div>
+          
           </div>
           <div class="content">
             <h3>Black Papper</h3>
             <div class="price">Rs.300/ kilogram</div>
+          </div>
+          <div class="icons">
+            <a href="contactSeller.html" class="cart-btn">Contact Seller <i class="fa fa-address-book"></i></a>
           </div>
         </div>
 
@@ -212,15 +203,13 @@
           <span class="discount">-3%</span>
           <div class="image">
             <img   src="images/DryGingerPowder.jpg" alt="">
-            <div class="icons">
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#" class="cart-btn">Add to Cart</a>
-              <a href="#" class="fas fa-share"></a>
-            </div>
           </div>
           <div class="content">
             <h3>Sonth Powder</h3>
             <div class="price">Rs.81/ 100g</div>
+          </div>
+          <div class="icons">
+            <a href="contactSeller.html" class="cart-btn">Contact Seller <i class="fa fa-address-book"></i></a>
           </div>
         </div>
 
@@ -229,15 +218,14 @@
           <span class="discount">-18%</span>
           <div class="image">
             <img  src="images/Jeera.jpg" alt="">
-            <div class="icons">
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#" class="cart-btn">Add to Cart</a>
-              <a href="#" class="fas fa-share"></a>
-            </div>
+          
           </div>
           <div class="content">
             <h3>Cumin Seed</h3>
             <div class="price">Rs.15/ 50g</div>
+          </div>
+          <div class="icons">
+            <a href="contactSeller.html" class="cart-btn">Contact Seller <i class="fa fa-address-book"></i></a>
           </div>
         </div>
 
@@ -246,23 +234,39 @@
           <span class="discount">-5%</span>
           <div class="image">
             <img  src="images/bowl-of-cloves2.jpg" alt="">
-            <div class="icons">
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#" class="cart-btn">Add to cart</a>
-              <a href="#" class="fas fa-share"></a>
-            </div>
+            
           </div>
           <div class="content">
             <h3>Clove Seeds</h3>
             <div class="price">Rs.398/ kilogram</div>
           </div>
+          <div class="icons">
+            <a href="contactSeller.html" class="cart-btn">Contact Seller <i class="fa fa-address-book"></i></a>
+          </div>
         </div>
 
+        
+        <div class="box">
+          <span class="discount">-5%</span>
+          <div class="image">
+            <img  src="images/natural-green-cardamom.jpg" alt="">
+            
+          </div>
+          <div class="content">
+            <h3>Green Cardamom</h3>
+            <div class="price">Rs.250/ kilogram</div>
+          </div>
+          <div class="icons">
+            <a href="contactSeller.html" class="cart-btn">Contact Seller <i class="fa fa-address-book"></i></a>
+          </div>
+        </div>
 
 
       </div>
     </section>
      <!--product section starts-->
+
+     
 
 
      
@@ -352,7 +356,7 @@
               <input type="email" placeholder="@email" class="box">
               <input type="number" placeholder="number" class="box">
               <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea> 
-              <input type="submit" value="send message" class="btn">
+              <input type="submit" formaction="success.html" value="send message" class="btn">
           </form>
       
       <div class="image">
